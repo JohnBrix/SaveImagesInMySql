@@ -12,7 +12,7 @@ We use a Blob Data type in MySQL to upload a image, then we use a render ImageIc
 - Create a database name "myimg" in mysql.
 - Then create a table and paste this code in your Sql Command: 
 
-CREATE TABLE `myimg`.`image`( `id` INT(12) NULL , `name` VARCHAR(50) NOT NULL , `images` INT NOT NULL ) ENGINE = InnoDB;
+CREATE TABLE `myimg`.`images` ( `id` INT(12) NOT NULL AUTO_INCREMENT , `name` VARCHAR(50) NOT NULL , `images` LONGBLOB NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 
 - Download the project "SaveImagesInMySql and import in Netbeans".
 - Download this "Mysql-connector-java-5.1.23-bin.jar and add this in your libraries in Netbeans. 
